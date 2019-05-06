@@ -1,0 +1,250 @@
+/*!
+ * CSS Core - Website
+ * Last Update : Nov 10, 2018
+ */
+
+
+/* >>> Custom Reset <<< */ 
+
+
+/* >>> Base Layout <<< */ 	
+	
+	/* >>> General <<< */	
+	.center {text-align: center;}
+
+	.nomargin { margin: 0 !important }
+	.nopadding {padding: 0 !important}
+
+	img.full {width: 100%; height: auto;}
+		
+	/* >>> Header <<< */
+	nav.navbar {font-size: 17px; display: block; padding: 0 !important;}	
+
+	nav.navbar .dropdown-menu { border: none; background: #000; text-transform: none; }
+	nav.navbar .dropdown-menu a.dropdown-item {color: #fff; font-size: 16px; font-weight: normal;}
+	nav.navbar .dropdown-menu a.dropdown-item:hover {background: none; color: #fff}
+
+	.navbar-top {font-size: 12px; padding-bottom: 5px; margin-bottom: 5px; border-bottom: solid 1px #e5e5e5;}
+	.navbar-top .links { text-align: right; float: right; list-style: none;}
+	.navbar-top .links li {margin: 0; padding: 0; display: inline-block;}	
+
+	@media (max-width:767px) {
+
+		header nav.navbar {}
+
+		.navbar-brand { max-width: 120px; }
+		nav.navbar { padding: 8px 15px !important; }
+
+		.navbar-toggler {background: #034ea2; color: #fff; border-radius: 0; font-size: 16px; padding: 25px 20px; margin-right: -15px; margin-top: -8px; margin-bottom: -8px;}
+
+		.navbar-expand-sm .navbar-nav .nav-item a.nav-link { padding: 15px 0; }
+		.navbar-nav .nav-item.full { background: none }
+		.navbar-nav .nav-item.full a.nav-link i { color: #e5e5e5; margin-right: 10px;}
+	}
+
+	@media (min-width: 576px) {
+		.navbar-expand-sm .navbar-nav .nav-item { margin-left: 0.8rem; margin-right: 0.8rem; }
+		.navbar-expand-sm .navbar-nav .nav-item:last-child .nav-link {margin-right: 0}
+	}
+		
+	/* >>> Body <<< */
+	main { overflow: hidden; }
+	main.overlap { padding-top: 100vh }
+	main.std { padding-top: 120px; }
+
+	div.block { padding: 8rem 0; background: #fff; position: relative;}
+	div.block.nopadding { padding: 0 }
+	div.block.wide { padding: 20rem 0; }
+	div.block.wrap { padding: 60px; }
+	div.block.content { padding: 40px 0; }
+	div.banner {margin: 0; padding: 0 !important}
+	div.banner.fixed { position: fixed; top: 0; left: 0; right: 0; bottom: 0; }
+
+	img {max-width: 100%; height: auto;}
+
+	.content .row {margin-bottom: 40px;}
+
+	.block.pheader { padding: 5rem 0; position: relative; color: #fff;}
+		.block.pheader:before { position: absolute; top: 0; left: 0; right: 0; bottom: 0; content: ""; background: #000; opacity: .7; }
+		.ptitle { position: relative; text-align: center; }
+		.ptitle h1 { margin-bottom: 15px; }
+
+	@media (max-width:767px) {
+		div.block { padding: 6rem 0; }	
+	}
+
+	/* >>> Footer <<< */
+	footer {}
+		footer .footer-area {padding: 40px 0;}
+		footer .footer-links {padding: 60px 0;}
+		footer .footer-links ul{ list-style: none; margin: 20px 0; padding: 0 }
+
+		footer ul.social-links {margin: 0; padding: 0;}
+		footer ul.social-links li { display: inline-block; padding: 0 3px; font-size: 20px;}
+		footer ul.social-links li a { color: #fff }
+
+		footer ul.menu-links { margin: 0; padding: 0 }
+		footer ul.menu-links li {display: block; font-size: 14px; padding: 3px 0;}
+		footer ul.menu-links li a { color: #fff }
+
+		footer .footer-copy { font-size: 14px; line-height: 24px; }
+
+
+	@media (max-width:767px) {
+		footer .footer-area { text-align: center }
+
+		footer .footer-copy { margin-bottom: 30px; }
+		footer ul.menu-links  { margin: 0 0 30px; }
+	}
+
+	/* >>> Size Guides <<< */
+	h1, h1.section-header {font-size: 36px;}
+	h1 {margin-bottom: 32px;}
+	h2 {font-size: 28px;}
+	h4 {font-size: 22px}
+
+	
+
+	/* >>> Color Guides <<< */
+	.cl-main { background: #31517a; color: #fff; }
+	.cl-sub {}
+
+	.cl-dark {}
+	.cl-white {}
+	.block.cl-grey { background: #d4d4d4; color: #000 }	
+
+	/* >>> Button Guides <<< */
+	.btn-area { margin: 20px 0;}
+		.btn-area .btn { margin: 0 5px; }
+		.btn-area .btn:first-child {margin-left: 0}
+
+	.btn:hover { color: inherit }		
+			
+	.btn { text-align: center; }
+
+	.btn-main {background: #ed1d25; color: #fff;}
+	.btn-main:hover { background: #ff3941; color: #fff }
+	.btn-outline-main {background: none; border: solid 2px #ed1d25; color: #fff }	
+
+	.btn-large { font-size: 24px; padding: 12px 20px; }
+
+	@media (max-width:767px) {
+		.btn { font-size: 14px; padding: 5px 8px; }
+	}
+
+	/* >>> valign <<< */
+	.valign-wrap { display: table; vertical-align: middle; width: 100%; height: 100%;}
+		.valign {display: table-cell; vertical-align: middle; width: 100%; height: 100%;}	
+
+	.anihover {
+	  .animation-play-state: paused;
+	}
+	.anihover:hover {
+	  animation-play-state: running;
+	}	
+
+/* >>> Theme Style <<< */
+	
+	/* >>> Headers <<< */
+	.section-header { text-align: center; position: relative; margin-bottom: 80px;}
+	.section-header-min {text-align: center; position: relative; margin-bottom: 50px;}		
+
+	.page-header {font-size: 20px; text-align: center; margin: 0 0 40px;}
+	.page-header-min { font-size: 20px; border-left: solid 2px #000; padding-left: 10px; margin-bottom: 15px;
+		padding-top: 3px; padding-bottom: 3px;
+	}	
+
+	@media (max-width:767px) {
+		.section-header {margin-bottom: 25px;}
+	}
+
+	/* >>> Section <<< */
+
+	.banner { position: relative; }
+		.banner .banner-content {position: relative;}
+		.banner .banner-content .img { width: 100%; height: auto; }
+		.banner .caption { position: absolute; left: 0; top: 0; right: 0; bottom: 0}
+		.banner .caption:before { content: ""; background: #000; opacity: .5; position: absolute; top: 0; left: 0; bottom: 0; right: 0; display: none; }
+
+		.banner.inside { overflow: hidden; position: relative; }
+		.banner.inside:before {content: ""; position: absolute; opacity: .8; top: 0; left: 0; right: 0; bottom: 0; background: #000}
+		.banner.inside img { width: 100%; height: auto; }
+		.banner.inside h1 {color: #fff; position: relative; margin: 0; padding: 40px 0; text-align: center;}
+		
+	@media (max-width:767px) {
+		.banner .banner-content .caption { text-align: center; }
+		.banner .banner-content .caption h1 { font-size: 25px; margin-bottom: 15px; }
+		.banner .banner-content .caption p { display: none; }
+
+		.banner:before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #000;
+			opacity: 0.8; z-index: 10;
+		}
+	}	
+
+	/* >>> List View <<< */
+	.list-view {  }
+
+	.list-view.block {list-style: none; margin: 0; padding: 0;}
+		.list-view.block li.item { width: 33.333333%; float: left; padding: 15px; margin-bottom: 20px;}
+
+	/* >>> Block List <<< */
+	.block-list { list-style: none; margin: 0 -15px; padding: 0;}
+		.block-list:before { display: table; content: "";}
+		.block-list:after { display: table; content: ""; clear: both;}
+		.block-list > li {padding: 15px;}	
+		.block-list > li:before { display: table; content: "";}
+		.block-list > li:after { display: table; content: ""; clear: both;}
+			
+	.block-list .title {font-family: 'Exo 2', sans-serif;}
+	.block-list .thumb img { width: 100%; height: auto}
+	
+	.block-list.col > li { float: left}
+	.block-list.block-1 li { float: none !important; width: auto}
+	.block-list.block-2 li { width: 50%;}
+	.block-list.block-3 li { width: 33.33333333%;}
+	.block-list.block-4 li { width: 25%;}	
+
+	/* >>> Point View <<< */
+	.point-view {}
+		.point-view .thumb {text-align: center; margin-bottom: 15px;}
+		.point-view .thumb img { max-width: 100%; height: auto; display: inline-block;}
+		.point-view .content {}
+		.point-view .content .title { font-weight: bold; font-size: 20px; }
+
+		.point-view .thumb:hover img { -webkit-animation: bounce 1s; animation: bounce 1s;}
+
+	.point-view.narrow .item { margin: auto; width: 280px; max-width: 100%; }	
+
+	@media (max-width:767px) {
+		
+		.point-view .item { padding-top: 20px; padding-bottom: 20px;}
+		.point-view .thumb img { width: 120px; }
+	}	
+
+	/* >>> Article <<< */
+	.article-list ul.block-list li { padding: 10px; }
+	.article-list ul.block-list li .item { background: #fff; border-radius: 10px; padding: 15px; }
+	.article-list ul.block-list li .item .date { font-size: 11px; margin: 10px 0;}
+	.article-list ul.block-list li .item .title { margin:10px 0; font-size: 18px; line-height: 22px; color: #84b343;}
+	.article-list ul.block-list li .item .content { font-size: 13px; line-height: 18px}
+	.article-list ul.block-list li .item a.more { font-size: 11px;}
+	.article-list ul.block-list li .item a.more:before {content: "\f0da"; font-family: FontAwesome; margin-right: 6px;}
+
+	/* >>> CTA View <<< */
+	.closer {}
+	
+	.closer.full { text-align: center; }
+		.closer.full .btn-area { margin: 40px 0 0 }
+		.closer.full .btn-area .btn { font-size: 20px; border-radius: 100px; padding: 24px 50px; }
+
+	/* >>> H Timeline <<< */
+	.cd-horizontal-timeline ul, .cd-horizontal-timeline ol { list-style: none;}
+	.cd-horizontal-timeline .events-content h2 { font-family: 'Exo 2', sans-serif; font-size: 24px;}
+	.cd-horizontal-timeline .events-content em { font-size: 18px;}
+	.cd-horizontal-timeline .events-content p { font-size: 15px;}	
+
+	/* >>> Pagination <<< */	
+	.pagination { width: 100%; text-align:  center; font-size: 11px;}
+	.pagination > li { display: inline-block}
+	.pagination > li a { color: #868686}
+	.pagination > .active > a, .pagination > .active:hover > a {background: #84b343; color: #fff; border-color:#84b343;}

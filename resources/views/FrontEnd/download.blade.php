@@ -1,0 +1,1 @@
+<iframe src="{{ asset('public/kontrak/'.$data['kontrak'][0]->pdf) }}"></iframe>
